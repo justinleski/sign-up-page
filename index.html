@@ -7,40 +7,57 @@
     <title>Sign Up</title>
 </head>
 <body>
-    <header>
-        <h1>Sign Up</h1>
-        <h2>Ready to delve into your new journey? You won't regret it.</h2>
-    </header>
-
-    <main>
-        <form action="?" method="post">
-            <label for="first_name">First Name:</label>
-            <input type="text" id="first_name" name="first_name" placeholder="John">
-
-            <label for="last_name">Last Name:</label>
-            <input type="text" id="last_name" name="last_name" placeholder="Doe">
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="johndoe@gmail.com">
-
-            <label for="phone_num">Phone:</label>
-            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phone_num" name="phone_num" placeholder="123-456-7890">
 
 
-            <!--Check if passwords match-->
-            <label for="passwrd">Password:</label>
-            <input type="password" id="passwrd" name="passwrd">
+    <div class="main_form">
+        <header>
+            <h1>Sign Up</h1>
+            <h2>Ready to delve into your new journey? You won't regret it.</h2>
+        </header>
+        <main>
+            <form action="?" method="post" id="sign-up-form">
+                <fieldset>
+                    <div class="user_input">
+                        <label for="first_name">First Name:</label>
+                        <input type="text" id="first_name" name="first_name" placeholder="John" required>
+                    </div>
+                    <div class="user_input">
+                        <label for="last_name">Last Name:</label>
+                        <input type="text" id="last_name" name="last_name" placeholder="Doe">
+                    </div>
+                </fieldset>
 
-            <label for="con_passwrd">Confirm Password:</label>
-            <input type="password" id="con_passwrd" name="con_passwrd">
+                <fieldset>
+                    <div class="user_input">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="johndoe@gmail.com" required>
+                    </div>
+                    <div class="user_input">
+                        <label for="phone_num">Phone:</label>
+                        <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phone_num" name="phone_num" placeholder="123-456-7890" required>
+                    </div>
+                </fieldset>
 
-            <button type="submit">Create Account</button>
+                <!--Check if passwords match-->
+                <fieldset>
+                    <div class="user_input">
+                        <label for="passwrd">Password:</label>
+                        <input type="password" id="passwrd" name="passwrd" required>
+                    </div>
+                    <div class="user_input">
+                        <label for="con_passwrd">Confirm Password:</label>
+                        <input type="password" id="con_passwrd" name="con_passwrd" required>
+                    </div>
+                </fieldset>
+
+                
+
+            </form>
+
+            <button type="submit" form="sign-up-form">Create Account</button>
             <h3>Already have an account? Log in.</h3>
 
-        </form>
-
-        
-
-    </main>
+        </main>
+    </div>  
 </body>
 </html>
