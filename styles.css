@@ -97,11 +97,12 @@ h3 {
 button {
     font-family: "Hind", Arial, Helvetica, sans-serif;
     border: none;
-    padding: 4px;
+    padding: 8px;
     background-color: var(--button-color);
     color: var(--dark-grey);
     border-radius: 4px;
     margin-bottom: 4px;
+    line-height: 1;
 }
 
 form {
@@ -118,12 +119,29 @@ input {
     border-bottom: 2px solid white;
 }
 
+input:user-invalid {
+    border-color: rgb(237, 48, 48);
+}
+
+input:focus {
+    border-color: var(--iceland-blue);
+    outline: none;
+}
+
 label {
     font-weight: 300;
 }
 
 header {
     margin-top: 32px;
+}
+
+aside {
+    background-image: url(imgs/iceland.jpg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 50vw;
 }
 
 aside img {
