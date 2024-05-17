@@ -27,6 +27,7 @@ input, button, textarea, select {
 
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
+    font-size: clamp(1.5rem, 5vw, 3rem);
 }
 
 #root, #__next {
@@ -55,7 +56,6 @@ fieldset {
     margin-right: max(16px, 10%);
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .user_input {
@@ -124,8 +124,15 @@ input:user-invalid {
 }
 
 input:focus {
-    border-color: var(--iceland-blue);
     outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+  transition: background-color 5000s;
+  -webkit-text-fill-color: #fff !important;
 }
 
 label {
@@ -133,7 +140,7 @@ label {
 }
 
 header {
-    margin-top: 32px;
+    margin-top: max(0.1rem, 0.25rem, 1rem);
 }
 
 aside {
@@ -141,15 +148,28 @@ aside {
     background-position: center;
     background-size: auto;
     background-repeat: no-repeat;
-    width: 50vw;
+    width: 30vw;
+    height: 100vh;
+}
+
+aside svg {
+    margin: auto;
+    margin-top: max(40%, 64px);
+    stroke-width: 2;
 }
 
 aside img {
-    height: 100%;
-    object-fit: cover;
+    width: min(150px, 100%);
+    height: auto;
+    margin: auto;
 }
 
 a {
     color: var(--iceland-blue);
     text-decoration: none;
+}
+
+svg {
+    background: transparent;
+    filter: drop-shadow(0 4px 16px rgba(0,0,0,4));
 }
