@@ -10,5 +10,7 @@ Formatting HTML forms for accessibility is to also be considered such as using t
 - Also make text size of form responsive
 
 ##### Image Credits
-`<aside>` image credits goes to Wendelin Jacober on Pexels.
+- `<aside>` image credits goes to Wendelin Jacober on Pexels.
 Link: https://www.pexels.com/photo/aerial-photography-of-river-between-cliffs-1460222/
+
+- `svg` sourced from https://www.reshot.com/free-svg-icons/item/mountain-flag-H6XBNPJ32K/
