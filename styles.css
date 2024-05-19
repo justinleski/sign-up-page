@@ -27,7 +27,6 @@ input, button, textarea, select {
 
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
-    font-size: clamp(1.5rem, 5vw, 3rem);
 }
 
 #root, #__next {
@@ -56,7 +55,7 @@ fieldset {
     margin-right: max(16px, 10%);
     display: flex;
     flex-direction: column;
-    width: clamp(40vw, 50vw, 70vw);
+    max-width: clamp(10%, 867.33px, 80vw);
 }
 
 .user_input {
@@ -80,13 +79,13 @@ h1, h2 {
 
 h1 {
     font-weight: 600;
-    font-size: 3.815rem;
+    font-size: clamp(1.728rem, 3.815rem, 4rem);
     color: var(--button-color);
 }
 
 h2 {
     font-weight: 400;
-    font-size: 1.35rem;
+    font-size: clamp(1.2rem, 1.35rem, 2rem);
 }
 
 h3 {
