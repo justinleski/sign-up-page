@@ -56,6 +56,7 @@ fieldset {
     margin-right: max(16px, 10%);
     display: flex;
     flex-direction: column;
+    width: clamp(40vw, 50vw, 70vw);
 }
 
 .user_input {
@@ -85,7 +86,7 @@ h1 {
 
 h2 {
     font-weight: 400;
-    font-size: 1.25rem;
+    font-size: 1.35rem;
 }
 
 h3 {
@@ -103,6 +104,10 @@ button {
     border-radius: 4px;
     margin-bottom: 4px;
     line-height: 1;
+}
+
+button:hover {
+    background-color: var(--iceland-blue);
 }
 
 form {
@@ -140,7 +145,7 @@ label {
 }
 
 header {
-    margin-top: max(0.1rem, 0.25rem, 1rem);
+    margin-top: clamp(5vh, 8vh, 17.5%);
 }
 
 aside {
@@ -156,6 +161,8 @@ aside svg {
     margin: auto;
     margin-top: max(40%, 64px);
     stroke-width: 2;
+    width: min(100px, 25%);
+    height: min(100px, 25%);
 }
 
 aside img {
@@ -169,7 +176,15 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 svg {
     background: transparent;
     filter: drop-shadow(0 4px 16px rgba(0,0,0,4));
+}
+
+.call_to_action {
+    
 }
